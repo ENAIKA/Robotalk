@@ -1,0 +1,224 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Satisfy&display=swap');
+
+body{
+    background-image: url('image/jo-hilton-ZLtsJXwQ2Fg-unsplash.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* nav */
+
+
+nav{
+    overflow: hidden;
+    background: grey;
+    line-height: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav a{
+    float: left;
+    display: block;
+    width: 120px;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+nav a:hover{
+    background-color: cornflowerblue;
+    color: black;
+}
+nav .container{
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+nav input[type=text]{
+    padding: 0px;
+    margin-top: 8px;
+    font-size :17px;
+    border:none;
+    width: 150px;
+}
+
+nav form input[type=password]{
+    padding: 3px;
+    margin-top: 8px;
+    font-size :17px;
+    border:none;
+    width: 150px;
+}
+.container button{
+    flex-flow: inherit;
+    padding: 4px;
+    margin-top: 4px;
+    margin-right: 4px;
+    background:blue;
+    color:white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.container button:hover{
+    background-color: #ccc;
+}
+/* search bar */
+.search {
+  width: 100%;
+  
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 70px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  font-size: large;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: auto;
+  height: 70px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 90%;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* contact us */
+
+.open-button {
+    background-color: #555;
+    color: white;
+    margin-right: 0;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 70px;
+    right: 28px;
+    width: 280px;
+    border-radius: 10px;
+
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    z-index: 9;
+    font-family: 'Satisfy', cursive;
+    color: green;
+   
+  }
+
+  .form-popup h1{
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      text-decoration: underline;
+      color: black;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: lightgrey;
+    border-radius: 15px;
+    
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+    border-radius: 10px;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    border-radius: 10px;
+    font-family: 'Satisfy', cursive;
+    font-weight: bolder;
+    font-size: larger;
+    
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+/* footer */
+footer{
+    bottom: 0;
+    position: fixed;
+    /* margin-left: 40%; */
+    background-color: grey;
+    color: whitesmoke;
+    width: 100%;
+    left: 0;
+    
+}
+
+footer p{
+    text-align: center;
+    font-size: larger;
+}
