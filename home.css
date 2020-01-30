@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Satisfy&display=swap');
 
 body{
-    background-image: url('image/jo-hilton-ZLtsJXwQ2Fg-unsplash.jpg');
+    background-image: url('images/jo-hilton-ZLtsJXwQ2Fg-unsplash.jpg');
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
@@ -22,6 +22,8 @@ nav{
     top: 0;
     left: 0;
     right: 0;
+    float: left;
+    width: 100%;
 }
 nav a{
     float: left;
@@ -29,44 +31,38 @@ nav a{
     width: 120px;
     color:white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 30px;
+    font-family: 'Satisfy', cursive;
 }
 nav a:hover{
     background-color: cornflowerblue;
     color: black;
 }
 nav .container{
-    float: right;
+    float: left;
     margin-right: 10px;
     margin-top: 10px;
 }
-nav input[type=text]{
-    padding: 0px;
-    margin-top: 8px;
-    font-size :17px;
-    border:none;
-    width: 150px;
-}
 
-nav form input[type=password]{
-    padding: 3px;
-    margin-top: 8px;
-    font-size :17px;
-    border:none;
-    width: 150px;
+
+nav div{
+  font-size: 50px;
+  margin-top: 20px;
+  font-family: 'Dancing Script', cursive;
+  margin-left: 1400px;
 }
-.container button{
+button{
     flex-flow: inherit;
-    padding: 4px;
-    margin-top: 4px;
-    margin-right: 4px;
+    padding: 6px;
     background:blue;
     color:white;
     font-size: 17px;
     border: none;
     cursor: pointer;
+    font-family: 'Satisfy', cursive;
+    width: 90px;
 }
 .container button:hover{
     background-color: #ccc;
@@ -96,21 +92,22 @@ nav form input[type=password]{
 
 .searchButton {
   width: auto;
-  height: 70px;
+  height: 60px;
   border: 1px solid #00B4CC;
   background: #00B4CC;
   text-align: center;
   color: #fff;
-  border-radius: 0 5px 5px 0;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 20px;
+  
 }
 
 /*Resize the wrap to see the search bar change!*/
 .wrap{
   width: 90%;
   position: relative;
-  top: 40%;
+  top: 21%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -163,7 +160,7 @@ nav form input[type=password]{
   }
   
   /* Full-width input fields */
-  .form-container input[type=text], .form-container input[type=password] {
+  .form-container input[type=email], .form-container input[type=text], .form-container input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -221,4 +218,58 @@ footer{
 footer p{
     text-align: center;
     font-size: larger;
+    font-family: 'Satisfy', cursive;
 }
+
+/* search */
+#myInput {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  background-color: #ddd;
+}
+
+#myUL {
+  list-style-type: none;
+  padding-top: 120px;
+  top: 700px;
+  text-align: center;
+}
+
+#myUL li{
+  top: 50%;
+  text-align: center;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top:0; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  width: 10%;
+  display: inline-flex;
+  flex-direction: row;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+
+#popup:hover{
+  transition: ease-in-out 1s;
+  z-index:2;
+  transform: scale(0.987);
+  background-color: #00B4CC;
+}
+
+
+
