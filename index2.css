@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+nav {
+    overflow: hidden;
+    background: navy;
+    line-height: 30px;
+}
+
+nav a {
+    float: left;
+    display: block;
+    width: 120px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: cornflowerblue;
+    color: black;
+}
+
+nav .container {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+nav input[type=text],
+input[type=password] {
+    padding: 3px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 150px;
+}
+
+.container button {
+    flex-flow: inherit;
+    padding: 4px;
+    margin-top: 4px;
+    margin-right: 4px;
+    background: blue;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #ccc;
+}
