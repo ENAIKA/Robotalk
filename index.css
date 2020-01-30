@@ -304,7 +304,6 @@ body main{
   height: auto;
   text-align: center;
   width: 50%;
-  display: inline-block;
   float: left;
   background-color: lightgrey;
   right: 0;
@@ -326,6 +325,10 @@ main footer{
   position: fixed;
 }
 
+
+#about ol li{
+  text-decoration: none;
+}
 
 
 
