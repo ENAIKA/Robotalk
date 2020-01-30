@@ -206,7 +206,7 @@ button{
 /* footer */
 footer{
     bottom: 0;
-    position: fixed;
+    position:fixed;
     /* margin-left: 40%; */
     background-color: grey;
     color: whitesmoke;
@@ -270,6 +270,63 @@ footer p{
   transform: scale(0.987);
   background-color: #00B4CC;
 }
+main{
+  height: 100%;
+}
+main header{
+  height: 50%;
+  background-image: url('images/jo-hilton-ZLtsJXwQ2Fg-unsplash.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+main header div p{
+  font-size: 50px;
+  font-family: 'Satisfy', cursive;
+}
+
+body main{
+  background-color: lightgray;
+  line-height: 3em;
+  font-size: medium;
+}
+
+#about h1{
+  font-family: 'Satisfy', cursive;
+  font-size: 40px;
+  text-decoration: underline;
+  color: grey;
+  text-align: center;
+}
+
+#about{
+  height: auto;
+  text-align: center;
+  width: 50%;
+  display: inline-block;
+  float: left;
+  background-color: lightgrey;
+  right: 0;
+
+}
+
+
+
+main header h1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 70px;
+  font-weight: lighter;
+  color: orangered;
+  text-transform: uppercase;
+}
+
+main footer{
+  bottom: 0;
+  position: fixed;
+}
+
+
 
 
 
