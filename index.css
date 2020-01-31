@@ -130,22 +130,6 @@ button{
     border-radius: 10px;
 
   }
-
-  main .open-button {
-    background-color: #555;
-    color: white;
-    margin-right: 0;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    position: fixed;
-    bottom: 90px;
-    right: 28px;
-    width: 280px;
-    border-radius: 10px;
-
-  }
   
   /* The popup form - hidden by default */
   .form-popup {
@@ -339,6 +323,11 @@ main header h1{
 main footer{
   bottom: 0;
   position: fixed;
+  height: 50px;
+}
+
+main footer p{
+  margin-top: 4px;
 }
 
 
