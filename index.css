@@ -1,21 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Satisfy&display=swap');
-
-body{
+body {
     background-image: url('images/jo-hilton-ZLtsJXwQ2Fg-unsplash.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100%;
-  font-family: 'Open Sans', sans-serif;
-  height: 100%;
-  padding: 0;
-  margin: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
+
 
 /* nav */
 
-
-nav{
+nav {
     overflow: hidden;
     background: grey;
     line-height: 30px;
@@ -25,93 +24,100 @@ nav{
     float: left;
     width: 100%;
 }
-nav a{
+
+nav a {
     float: left;
     display: block;
     width: 120px;
-    color:white;
+    color: white;
     text-align: center;
     padding: 20px;
     text-decoration: none;
     font-size: 30px;
     font-family: 'Satisfy', cursive;
 }
-nav a:hover{
+
+nav a:hover {
     background-color: cornflowerblue;
     color: black;
 }
-nav .container{
+
+nav .container {
     float: left;
     margin-right: 10px;
     margin-top: 10px;
 }
 
-
-nav div{
-  font-size: 50px;
-  margin-top: 20px;
-  font-family: 'Dancing Script', cursive;
-  margin-left: 1350px;
+nav div {
+    font-size: 50px;
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 1350px;
 }
-button{
+
+button {
     flex-flow: inherit;
     padding: 6px;
-    background:blue;
-    color:white;
+    background: blue;
+    color: white;
     font-size: 17px;
     border: none;
     cursor: pointer;
     font-family: 'Satisfy', cursive;
     width: 90px;
 }
-.container button:hover{
+
+.container button:hover {
     background-color: #ccc;
 }
+
+
 /* search bar */
+
 .search {
-  width: 100%;
-  
-  display: flex;
+    width: 100%;
+    display: flex;
 }
 
 .searchTerm {
-  width: 100%;
-  border: 3px solid #00B4CC;
-  border-right: none;
-  padding: 5px;
-  height: 70px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  color: #9DBFAF;
-  font-size: large;
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 70px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    font-size: large;
 }
 
-.searchTerm:focus{
-  color: #00B4CC;
+.searchTerm:focus {
+    color: #00B4CC;
 }
 
 .searchButton {
-  width: auto;
-  height: 60px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
-  text-align: center;
-  color: #fff;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 20px;
-  
+    width: auto;
+    height: 60px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
 }
+
 
 /*Resize the wrap to see the search bar change!*/
-.wrap{
-  width: 90%;
-  position: relative;
-  top: 21%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 
+.wrap {
+    width: 90%;
+    position: relative;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 
 /* contact us */
 
@@ -128,10 +134,9 @@ button{
     right: 28px;
     width: 280px;
     border-radius: 10px;
+}
 
-  }
-
-  main .open-button {
+main .open-button {
     background-color: #555;
     color: white;
     margin-right: 0;
@@ -144,11 +149,12 @@ button{
     right: 28px;
     width: 280px;
     border-radius: 10px;
+}
 
-  }
-  
-  /* The popup form - hidden by default */
-  .form-popup {
+
+/* The popup form - hidden by default */
+
+.form-popup {
     display: none;
     position: fixed;
     bottom: 50px;
@@ -156,196 +162,206 @@ button{
     z-index: 9;
     font-family: 'Satisfy', cursive;
     color: green;
-   
-  }
+}
 
-  .form-popup h1{
-      text-align: center;
-      font-family: 'Dancing Script', cursive;
-      text-decoration: underline;
-      color: black;
-  }
-  
-  /* Add styles to the form container */
-  .form-container {
+.form-popup h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: underline;
+    color: black;
+}
+
+
+/* Add styles to the form container */
+
+.form-container {
     max-width: 300px;
     padding: 10px;
     background-color: lightgrey;
     border-radius: 15px;
-    
-  }
-  
-  /* Full-width input fields */
-  .form-container input[type=email], .form-container input[type=text], .form-container input[type=password] {
+}
+
+
+/* Full-width input fields */
+
+.form-container input[type=email],
+.form-container input[type=text],
+.form-container input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
     background: #f1f1f1;
     border-radius: 10px;
-  }
-  
-  /* When the inputs get focus, do something */
-  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+}
+
+
+/* When the inputs get focus, do something */
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
     background-color: #ddd;
     outline: none;
     border-radius: 10px;
-  }
-  
-  /* Set a style for the submit/login button */
-  .form-container .btn {
+}
+
+
+/* Set a style for the submit/login button */
+
+.form-container .btn {
     background-color: #4CAF50;
     color: white;
     padding: 10px 10px;
     border: none;
     cursor: pointer;
     width: 100%;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     opacity: 0.8;
     border-radius: 10px;
     font-family: 'Satisfy', cursive;
     font-weight: bolder;
     font-size: larger;
-    
-  }
-  
-  /* Add a red background color to the cancel button */
-  .form-container .cancel {
+}
+
+
+/* Add a red background color to the cancel button */
+
+.form-container .cancel {
     background-color: red;
-  }
-  
-  /* Add some hover effects to buttons */
-  .form-container .btn:hover, .open-button:hover {
+}
+
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover,
+.open-button:hover {
     opacity: 1;
 }
 
+
 /* footer */
-footer{
+
+footer {
     bottom: 0;
-    position:fixed;
+    position: fixed;
     /* margin-left: 40%; */
     background-color: grey;
     color: whitesmoke;
     width: 100%;
     left: 0;
-    
 }
 
-footer p{
+footer p {
     text-align: center;
     font-size: larger;
     font-family: 'Satisfy', cursive;
 }
 
+
 /* search */
+
 #myInput {
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-  border-radius: 20px;
-  background-color: #ddd;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    background-color: #ddd;
 }
 
 #myUL {
-  list-style-type: none;
-  padding-top: 120px;
-  top: 700px;
-  text-align: center;
+    list-style-type: none;
+    padding-top: 120px;
+    top: 700px;
+    text-align: center;
 }
 
-#myUL li{
-  top: 50%;
-  text-align: center;
+#myUL li {
+    top: 50%;
+    text-align: center;
 }
 
 #myUL li a {
-  border: 1px solid #ddd;
-  margin-top:0; /* Prevent double borders */
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  border-radius: 20px;
-  margin-bottom: 5px;
-  width: 10%;
-  display: inline-flex;
-  flex-direction: row;
-  float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  
+    border: 1px solid #ddd;
+    margin-top: 0;
+    /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    width: 10%;
+    display: inline-flex;
+    flex-direction: row;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-#popup:hover{
-  transition: ease-in-out 1s;
-  z-index:2;
-  transform: scale(0.987);
-  background-color: #00B4CC;
-}
-main{
-  height: 100%;
-}
-main header{
-  height: 50%;
-  background-image: url('images/jo-hilton-ZLtsJXwQ2Fg-unsplash.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  text-align: center;
+#popup:hover {
+    transition: ease-in-out 1s;
+    z-index: 2;
+    transform: scale(0.987);
+    background-color: #00B4CC;
 }
 
-main header div p{
-  font-size: 50px;
-  font-family: 'Satisfy', cursive;
+main {
+    height: 100%;
 }
 
-body main{
-  background-color: lightgray;
-  line-height: 3em;
-  font-size: medium;
+main header {
+    height: 50%;
+    background-image: url('images/jo-hilton-ZLtsJXwQ2Fg-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
 }
 
-#about h1{
-  font-family: 'Satisfy', cursive;
-  font-size: 40px;
-  text-decoration: underline;
-  color: grey;
-  text-align: center;
+main header div p {
+    font-size: 50px;
+    font-family: 'Satisfy', cursive;
 }
 
-#about{
-  height: auto;
-  text-align: center;
-  width: 50%;
-  float: left;
-  background-color: lightgrey;
-  right: 0;
-
+body main {
+    background-color: lightgray;
+    line-height: 3em;
+    font-size: medium;
 }
 
-
-
-main header h1{
-  font-family: 'Dancing Script', cursive;
-  font-size: 70px;
-  font-weight: lighter;
-  color: orangered;
-  text-transform: uppercase;
+#about h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+    text-decoration: underline;
+    color: grey;
+    text-align: center;
 }
 
-main footer{
-  bottom: 0;
-  position: fixed;
+#about {
+    height: auto;
+    text-align: center;
+    width: 50%;
+    float: left;
+    background-color: lightgrey;
+    right: 0;
 }
 
-
-#about ol li{
-  text-decoration: none;
+main header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    font-weight: lighter;
+    color: orangered;
+    text-transform: uppercase;
 }
 
+main footer {
+    bottom: 0;
+    position: fixed;
+}
 
-
-
+#about ol li {
+    text-decoration: none;
+}
