@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Robotalks</title>
+</head>
+<body>
+    <main id="main">
+        <header>
+            <nav>
+                <a class="active" href="index.html">Home</a>
+                <a href ="index.html">About</a>
+                <a href="searchpage.html">Search</a>
+                <div>
+                  Robotalks.
+                </div>
+            </nav>
+            <br>
+            <h1>Robotalks</h1>
+           <div>
+            <p>learn kenyan sign language</p>
+           </div>
+        </header>
+        <section>
+            <div id="about">
+                <h1>About us</h1>
+                <p>We are a group of emphathetic individuals that saw the gap in communication between deaf and mute community and the normal population. We  saw the dire need to reduce the gap. We therefore created a website to help people have a quick search of the words they would wish to know in Kenya Sign Language.</p>
+            </div>
+        </section>
+        <section>
+            <div id="about">
+                <h1>What we do</h1>
+                <p>We offer online learning service for Kenya Sign Lanuage.<br>
+                    <em>This is because Sign Language is different from countries to countries</em><br>
+                    We do interpretation
+
+                </p>
+            </div>
+        </section>
+        <button class="open-button" onclick="openForm()">Contact us</button>
+        <div class="contact">
+           <div class="form-popup" id="myForm">
+               <form action="/action_page.php" class="form-container">
+                 <h1>Contact Us </h1>
+                 <label for="text"><b>Name</b></label>
+                 <input type="text" placeholder="Your name" name="text" required>
+             
+                 <label for="email"><b>Email</b></label>
+                 <input type="email" placeholder="Enter Email" name="email" required>
+   
+                 <label for="text"><b>Message</b></label>
+                 <input type="text" placeholder="Your Message" name="text" required>
+             
+                 <button type="submit" class="btn">Send</button>
+                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+               </form>
+             </div> 
+            
+        </div>
+        <br>
+        <br>
+        <br>
+        <footer>
+            <p> &copy 2020 </p>        
+        </footer>
+    </main>
+   
+</body>
+</html>
