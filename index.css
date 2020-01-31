@@ -228,6 +228,7 @@ footer{
     color: whitesmoke;
     width: 100%;
     left: 0;
+    height: 50px;
     
 }
 
@@ -235,6 +236,7 @@ footer p{
     text-align: center;
     font-size: larger;
     font-family: 'Satisfy', cursive;
+    margin-top: 5px;
 }
 
 /* search */
