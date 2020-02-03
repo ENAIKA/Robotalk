@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Satisfy&display=swap');
 
-body{
-    background-image: url('images/jo-hilton-ZLtsJXwQ2Fg-unsplash.jpg');
+body {
+  background-image: url('images/jo-hilton-ZLtsJXwQ2Fg-unsplash.jpg');
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
@@ -13,64 +13,66 @@ body{
 }
 
 /* nav */
-
-
-nav{
-    overflow: hidden;
-    background: grey;
-    line-height: 30px;
-    top: 0;
-    left: 0;
-    right: 0;
-    float: left;
-    width: 100%;
-}
-nav a{
-    float: left;
-    display: block;
-    width: 120px;
-    color:white;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 30px;
-    font-family: 'Satisfy', cursive;
-}
-nav a:hover{
-    background-color: cornflowerblue;
-    color: black;
-}
-nav .container{
-    float: left;
-    margin-right: 10px;
-    margin-top: 10px;
+nav {
+  overflow: hidden;
+  background: grey;
+  line-height: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  float: left;
+  width: 100%;
 }
 
+nav a {
+  float: left;
+  display: block;
+  width: 120px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Satisfy', cursive;
+}
 
-nav div{
+nav a:hover {
+  background-color: cornflowerblue;
+  color: black;
+}
+
+nav .container {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+nav div {
   font-size: 50px;
   margin-top: 20px;
   font-family: 'Dancing Script', cursive;
   margin-left: 1300px;
 }
-button{
-    flex-flow: inherit;
-    padding: 6px;
-    background:blue;
-    color:white;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Satisfy', cursive;
-    width: 90px;
+
+button {
+  flex-flow: inherit;
+  padding: 6px;
+  background: blue;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Satisfy', cursive;
+  width: 90px;
 }
-.container button:hover{
-    background-color: #ccc;
+
+.container button:hover {
+  background-color: #ccc;
 }
+
 /* search bar */
 .search {
   width: 100%;
-  
   display: flex;
 }
 
@@ -86,7 +88,7 @@ button{
   font-size: large;
 }
 
-.searchTerm:focus{
+.searchTerm:focus {
   color: #00B4CC;
 }
 
@@ -100,126 +102,118 @@ button{
   border-radius: 20px;
   cursor: pointer;
   font-size: 20px;
-  
 }
 
 /*Resize the wrap to see the search bar change!*/
-.wrap{
+.wrap {
   width: 90%;
   position: relative;
   top: 21%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 /* contact us */
-
 .open-button {
-    background-color: #555;
-    color: white;
-    margin-right: 0;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    position: fixed;
-    bottom: 70px;
-    right: 28px;
-    width: 280px;
-    border-radius: 10px;
+  background-color: #555;
+  color: white;
+  margin-right: 0;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 70px;
+  right: 28px;
+  width: 280px;
+  border-radius: 10px;
+}
 
-  }
-  
-  /* The popup form - hidden by default */
-  .form-popup {
-    display: none;
-    position: fixed;
-    bottom: 50px;
-    right: 15px;
-    z-index: 9;
-    font-family: 'Satisfy', cursive;
-    color: green;
-   
-  }
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+  z-index: 9;
+  font-family: 'Satisfy', cursive;
+  color: green;
+}
 
-  .form-popup h1{
-      text-align: center;
-      font-family: 'Dancing Script', cursive;
-      text-decoration: underline;
-      color: black;
-  }
-  
-  /* Add styles to the form container */
-  .form-container {
-    max-width: 300px;
-    padding: 10px;
-    background-color: lightgrey;
-    border-radius: 15px;
-    
-  }
-  
-  /* Full-width input fields */
-  .form-container input[type=email], .form-container input[type=text], .form-container input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-    border-radius: 10px;
-  }
-  
-  /* When the inputs get focus, do something */
-  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-    border-radius: 10px;
-  }
-  
-  /* Set a style for the submit/login button */
-  .form-container .btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 10px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom:10px;
-    opacity: 0.8;
-    border-radius: 10px;
-    font-family: 'Satisfy', cursive;
-    font-weight: bolder;
-    font-size: larger;
-    
-  }
-  
-  /* Add a red background color to the cancel button */
-  .form-container .cancel {
-    background-color: red;
-  }
-  
-  /* Add some hover effects to buttons */
-  .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
+.form-popup h1 {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  text-decoration: underline;
+  color: black;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: lightgrey;
+  border-radius: 15px;
+}
+
+/* Full-width input fields */
+.form-container input[type=email], .form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  border-radius: 10px;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  border-radius: 10px;
+  font-family: 'Satisfy', cursive;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
 }
 
 /* footer */
-footer{
-    bottom: 0;
-    position:fixed;
-    /* margin-left: 40%; */
-    background-color: grey;
-    color: whitesmoke;
-    width: 100%;
-    left: 0;
-    height: 50px;
-    
+footer {
+  bottom: 0;
+  position: fixed;
+  /* margin-left: 40%; */
+  background-color: grey;
+  color: whitesmoke;
+  width: 100%;
+  left: 0;
+  height: 50px;
 }
 
-footer p{
-    text-align: center;
-    font-size: larger;
-    font-family: 'Satisfy', cursive;
+footer p {
+  text-align: center;
+  font-size: larger;
+  font-family: 'Satisfy', cursive;
 }
 
 /* search */
@@ -240,14 +234,15 @@ footer p{
   text-align: center;
 }
 
-#myUL li{
+#myUL li {
   top: 50%;
   text-align: center;
 }
 
 #myUL li a {
   border: 1px solid #ddd;
-  margin-top:0; /* Prevent double borders */
+  margin-top: 0;
+  /* Prevent double borders */
   background-color: #f6f6f6;
   padding: 12px;
   text-decoration: none;
@@ -262,19 +257,20 @@ footer p{
   margin-right: 10px;
   margin-bottom: 10px;
   text-align: center;
-  
 }
 
-#popup:hover{
+#popup:hover {
   transition: ease-in-out 1s;
-  z-index:2;
+  z-index: 2;
   transform: scale(0.987);
   background-color: #00B4CC;
 }
-main{
+
+main {
   height: 100%;
 }
-main header{
+
+main header {
   height: 50%;
   background-image: url('images/jo-hilton-ZLtsJXwQ2Fg-unsplash.jpg');
   background-size: cover;
@@ -282,18 +278,18 @@ main header{
   text-align: center;
 }
 
-main header div p{
+main header div p {
   font-size: 50px;
   font-family: 'Satisfy', cursive;
 }
 
-body main{
+body main {
   background-color: lightgray;
   line-height: 3em;
   font-size: medium;
 }
 
-#about h1{
+#about h1 {
   font-family: 'Satisfy', cursive;
   font-size: 40px;
   text-decoration: underline;
@@ -301,19 +297,16 @@ body main{
   text-align: center;
 }
 
-#about{
+#about {
   height: auto;
   text-align: center;
   width: 50%;
   float: left;
   background-color: lightgrey;
   right: 0;
-
 }
 
-
-
-main header h1{
+main header h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 70px;
   font-weight: lighter;
@@ -321,21 +314,16 @@ main header h1{
   text-transform: uppercase;
 }
 
-main footer{
+main footer {
   bottom: 0;
   position: fixed;
   height: 50px;
 }
 
-main footer p{
+main footer p {
   margin-top: 4px;
 }
 
-
-#about ol li{
+#about ol li {
   text-decoration: none;
 }
-
-
-
-
